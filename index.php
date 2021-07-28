@@ -3,12 +3,70 @@
 $statement = $pdo->prepare("SELECT * FROM home WHERE home_id=2");
 $statement->execute();
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-foreach ($result as $row)
+foreach ($result as $row)	
 {
 	// $logo = $row['logo'];
 	$background_image = $row['background_image'];	
 	$backgroundimage_text1 = $row['backgroundimage_text1'];
 }   
+?>
+<?php
+$statement = $pdo->prepare("SELECT * FROM sunday_schedule WHERE sunday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM monday_schedule WHERE monday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM tuesday_schedule WHERE tuesday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM wednesday_schedule WHERE wednesday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM thursday_schedule WHERE thursday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM friday_schedule WHERE friday_schedule_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
+$statement = $pdo->prepare("SELECT * FROM saturday_schedule WHERE saturday_schedule_id=2");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)	
+{
+	// $logo = $row['logo'];
+}
+
 ?>
 <!DOCTYPE HTML>
 <html>
