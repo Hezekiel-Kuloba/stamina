@@ -96,7 +96,7 @@ foreach ($result as $row)
 
     <div class="fh5co-loader"></div>
 
-    
+    <div id="page">
         <nav class="fh5co-nav" role="navigation">
             <div class="top">
                 <div class="container">
@@ -120,11 +120,12 @@ foreach ($result as $row)
                         </div>
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="about.html">Trainer</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li class="has-dropdown">
+                                <li class="active"><a href="index.php">Home</a></li>
+                                <li><a href="gallery.php">Gallery</a></li>
+                                <li><a href="about.php">Trainer</a></li>
+                                <li><a href="pricing.php">Pricing</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <!-- <li class="has-dropdown">
                                     <a href="blog.html">Blog</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Web Design</a></li>
@@ -132,8 +133,8 @@ foreach ($result as $row)
                                         <li><a href="#">Branding</a></li>
                                         <li><a href="#">API</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                </li> -->
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -147,7 +148,7 @@ foreach ($result as $row)
         </div>
 
    
-
+    </div>
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <!-- jQuery Easing -->

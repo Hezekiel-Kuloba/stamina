@@ -106,41 +106,41 @@ INSERT INTO `home` (`home_id`, `background_image`, `backgroundimage_text1`, `bac
 
 CREATE TABLE `sunday_schedule` (
   `sunday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `sunday_schedule` (`sunday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `sunday_schedule` (`sunday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -178,41 +178,41 @@ INSERT INTO `sunday_schedule` (`sunday_schedule_id`, `1_image`, `1_time`, `1_cla
 
 CREATE TABLE `monday_schedule` (
   `monday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `monday_schedule` (`monday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `monday_schedule` (`monday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -250,41 +250,41 @@ INSERT INTO `monday_schedule` (`monday_schedule_id`, `1_image`, `1_time`, `1_cla
 
 CREATE TABLE `tuesday_schedule` (
   `tuesday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `tuesday_schedule` (`tuesday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `tuesday_schedule` (`tuesday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -322,41 +322,41 @@ INSERT INTO `tuesday_schedule` (`tuesday_schedule_id`, `1_image`, `1_time`, `1_c
 
 CREATE TABLE `wednesday_schedule` (
   `wednesday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `wednesday_schedule` (`wednesday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `wednesday_schedule` (`wednesday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -394,41 +394,41 @@ INSERT INTO `wednesday_schedule` (`wednesday_schedule_id`, `1_image`, `1_time`, 
 
 CREATE TABLE `thursday_schedule` (
   `thursday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `thursday_schedule` (`thursday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `thursday_schedule` (`thursday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -466,41 +466,41 @@ INSERT INTO `thursday_schedule` (`thursday_schedule_id`, `1_image`, `1_time`, `1
 
 CREATE TABLE `friday_schedule` (
   `friday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `friday_schedule` (`friday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `friday_schedule` (`friday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -538,41 +538,41 @@ INSERT INTO `friday_schedule` (`friday_schedule_id`, `1_image`, `1_time`, `1_cla
 
 CREATE TABLE `saturday_schedule` (
   `saturday_schedule_id` int(10) NOT NULL,
-  `1_image` varchar(255) NOT NULL,
-  `1_time` varchar(255) NOT NULL,
-  `1_class` text NOT NULL,
-  `1_name` text NOT NULL,
-  `2_image` varchar(255) NOT NULL,
-  `2_time` varchar(255) NOT NULL,
-  `2_class` text NOT NULL,
-  `2_name` text NOT NULL,
-  `3_image` varchar(255) NOT NULL,
-  `3_time` varchar(255) NOT NULL,
-  `3_class` text NOT NULL,
-  `3_name` text NOT NULL,
-  `4_image` varchar(255) NOT NULL,
-  `4_time` varchar(255) NOT NULL,
-  `4_class` text NOT NULL,
-  `4_name` text NOT NULL,
-  `5_image` varchar(255) NOT NULL,
-  `5_time` varchar(255) NOT NULL,
-  `5_class` text NOT NULL,
-  `5_name` text NOT NULL,
-  `6_image` varchar(255) NOT NULL,
-  `6_time` varchar(255) NOT NULL,
-  `6_class` text NOT NULL,
-  `6_name` text NOT NULL,
-  `7_image` varchar(255) NOT NULL,
-  `7_time` varchar(255) NOT NULL,
-  `7_class` text NOT NULL,
-  `7_name` text NOT NULL,
-  `8_image` varchar(255) NOT NULL,
-  `8_time` varchar(255) NOT NULL,
-  `8_class` text NOT NULL,
-  `8_name` text NOT NULL
+  `image1` varchar(255) NOT NULL,
+  `time1` varchar(255) NOT NULL,
+  `class1` text NOT NULL,
+  `name1` text NOT NULL,
+  `image2` varchar(255) NOT NULL,
+  `time2` varchar(255) NOT NULL,
+  `class2` text NOT NULL,
+  `name2` text NOT NULL,
+  `image3` varchar(255) NOT NULL,
+  `time3` varchar(255) NOT NULL,
+  `class3` text NOT NULL,
+  `name3` text NOT NULL,
+  `image4` varchar(255) NOT NULL,
+  `time4` varchar(255) NOT NULL,
+  `class4` text NOT NULL,
+  `name4` text NOT NULL,
+  `image5` varchar(255) NOT NULL,
+  `time5` varchar(255) NOT NULL,
+  `class5` text NOT NULL,
+  `name5` text NOT NULL,
+  `image6` varchar(255) NOT NULL,
+  `time6` varchar(255) NOT NULL,
+  `class6` text NOT NULL,
+  `name6` text NOT NULL,
+  `image7` varchar(255) NOT NULL,
+  `time7` varchar(255) NOT NULL,
+  `class7` text NOT NULL,
+  `name7` text NOT NULL,
+  `image8` varchar(255) NOT NULL,
+  `time8` varchar(255) NOT NULL,
+  `class8` text NOT NULL,
+  `name8` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `saturday_schedule` (`saturday_schedule_id`, `1_image`, `1_time`, `1_class`, `1_name`, `2_image`, `2_time`, `2_class`, `2_name`, `3_image`, `3_time`, `3_class`, `3_name`, `4_image`, `4_time`, `4_class`, `4_name`, `5_image`, `5_time`, `5_class`, `5_name`, `6_image`, `6_time`, `6_class`, `6_name`, `7_image`, `7_time`, `7_class`, `7_name`, `8_image`, `8_time`, `8_class`, `8_name` ) VALUES
+INSERT INTO `saturday_schedule` (`saturday_schedule_id`, `image1`, `time1`, `class1`, `name1`, `image2`, `time2`, `class2`, `name2`, `image3`, `time3`, `class3`, `name3`, `image4`, `time4`, `class4`, `name4`, `image5`, `time5`, `class5`, `name5`, `image6`, `time6`, `class6`, `name6`, `image7`, `time7`, `class7`, `name7`, `image8`, `time8`, `class8`, `name8` ) VALUES
 (1,
 'exercise.svg',
 '7:00 AM - 8AM',
@@ -828,6 +828,90 @@ VALUES (
 '15 Body Building Classes',
 '15 Body Building Classes'
 );
+
+CREATE TABLE `contact` (
+`contact_id` int(10) NOT NULL,
+`background_image` varchar(255) NOT NULL,
+`backgroundimage_text1` text NOT NULL,
+`backgroundimage_text2` text NOT NULL,
+`backgroundimage_text3` text NOT NULL,
+`text1` text NOT NULL, 
+`text2` text NOT NULL, 
+`text3` text NOT NULL, 
+`twitter` varchar(255) NOT NULL,
+`facebook` varchar(255) NOT NULL,
+`instagram` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `contact` (`contact_id`, `background_image`, `backgroundimage_text1`, `backgroundimage_text2`, `backgroundimage_text3`, `text1`, `text2`, `text3`, `twitter`, `facebook`, `instagram` )
+VALUES (
+1,
+'img_bg_2.jpg',
+'Contact Us',
+'Free html5 templates Made by ',
+'freehtml5.co',
+'198 West 21th Street, Suite 721 New York NY 10016',
+'0712345678',
+'walumbehezzy@gmail.com',
+'twitter',
+'facebook',
+'instagram'
+);
+
+CREATE TABLE `footer` (
+`footer_id` int(10) NOT NULL,
+`text1` text NOT NULL,
+`text2` text NOT NULL,
+`text3` text NOT NULL,
+`copyright_text` varchar(255) NOT NULL 
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `footer`( `footer_id`, `text1`, `text2`, `text3`, `copyright_text` )
+VALUES (
+1,
+'text1',
+'text2',
+'text3',
+'copyright_text'
+);
+
+CREATE TABLE `social` (
+`social_id` int(10) NOT NULL,
+`facebook` varchar(255) NOT NULL,
+`twitter` varchar(255) NOT NULL,
+`instagram` varchar(255) NOT NULL,
+`whatsapp` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `social` ( `social_id`, `facebook`, `twitter`, `instagram`, `whatsapp` )
+VALUES (
+1,
+'lorem1',
+'lorem2',
+'lorem3',
+'lorem4'
+);
+
+CREATE TABLE `tbl_admin` (
+  `admin_id` int(10) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `role` varchar(30) NOT NULL,
+  `status` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_admin`
+--
+INSERT INTO `tbl_admin` (`admin_id`, `full_name`, `email`, `phone`, `password`, `photo`, `role`, `status`) VALUES
+(1, 'Hezekiel Kuloba', 'walumbehezekiel@gmail.com', '', '81dc9bdb52d04dc20036dbd8313ed055', 'user-1.jpg', 'Super Admin', 'Active'),
+(13, 'William Musyoki', 'williammusyoki@gmail.com', '', '81dc9bdb52d04dc20036dbd8313ed055', 'user-13.jpg', 'Admin', 'Active');
+
+
+
 ALTER TABLE `header`
   ADD PRIMARY KEY (`header_id`);
 
@@ -907,6 +991,30 @@ ALTER TABLE `pricing`
 
 ALTER TABLE `pricing`
   MODIFY `pricing_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`contact_id`);
+
+ALTER TABLE `contact`
+  MODIFY `contact_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `footer`
+  ADD PRIMARY KEY (`footer_id`);
+
+ALTER TABLE `footer`
+  MODIFY `footer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `social`
+  ADD PRIMARY KEY (`social_id`);
+
+ALTER TABLE `social`
+  MODIFY `social_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `tbl_admin`
+  ADD PRIMARY KEY (`admin_id`);
+
+ALTER TABLE `tbl_admin`
+  MODIFY `admin_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
