@@ -9,7 +9,7 @@ date_default_timezone_set('Asia/Dubai');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'kevin';
+$dbname = 'kevindb';
 
 // Database Username
 $dbuser = 'root';
