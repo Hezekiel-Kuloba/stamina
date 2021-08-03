@@ -5,22 +5,16 @@ include("inc/config.php");
 include("inc/functions.php");
 include("inc/CSRF_Protect.php");
 $csrf = new CSRF_Protect();
-
 $error_message = '';
-
 $success_message = '';
-
 $error_message1 = '';
-
 $success_message1 = '';
 
 // Check if the user is logged in or not
-
 if(!isset($_SESSION['user'])) {
 	header('location: login.php');
 	exit;
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +49,7 @@ if(!isset($_SESSION['user'])) {
 		<header class="main-header">
 
 			<a href="index.php" class="logo">
-				<span class="logo-lg">Kevin's Gym Site</span>
+				<span class="logo-lg">Kevin Fitness Club.com</span>
 			</a>
 
 			<nav class="navbar navbar-static-top">
@@ -70,7 +64,7 @@ if(!isset($_SESSION['user'])) {
 					<ul class="nav navbar-nav">
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="../assets/img/gallery/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
+								<img src="../assets/uploads/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
 								<span class="hidden-xs"><?php echo $_SESSION['user']['full_name']; ?></span>
 							</a>
 							<ul class="dropdown-menu">
@@ -103,18 +97,41 @@ if(!isset($_SESSION['user'])) {
 			          </a>
 			        </li>
 
-					
-			        <li class="treeview <?php if( ($cur_page == 'settings.php') ) {echo 'active';} ?>">
-			          <a href="settings.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Website Settings</span>
+			        <li class="treeview <?php if( ($cur_page == 'gallery_settings.php') ) {echo 'active';} ?>">
+			          <a href="gallery_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Gallery Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'header_settings.php') ) {echo 'active';} ?>">
+			          <a href="header_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Header Settings</span>
+			          </a>
+			        </li>
+
+			        <li class="treeview <?php if( ($cur_page == 'trainer_settings.php') ) {echo 'active';} ?>">
+			          <a href="trainer_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Trainer Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'pricing_settings.php') ) {echo 'active';} ?>">
+			          <a href="pricing_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Pricing Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'conatct_settings.php') ) {echo 'active';} ?>">
+			          <a href="conatct_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Contact Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'footer_settings.php') ) {echo 'active';} ?>">
+			          <a href="footer_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Footer Settings</span>
 			          </a>
 			        </li>
 
                     
-
       			</ul>
     		</section>
   		</aside>
 
   		<div class="content-wrapper">
-			  
