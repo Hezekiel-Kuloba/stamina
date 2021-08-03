@@ -110,8 +110,8 @@ foreach ($result as $row)
 
 ?>
 <header id="fh5co-header" class="fh5co-cover" role="banner"
-	style="background-image:url(images/<?php echo $background_image; ?>);" data-stellar-background-ratio="0.5">
-	<div class="overlay"></div>
+	style="background-image:url(images/backgroundImages/<?php echo $background_image; ?>);" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>   	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
@@ -139,7 +139,7 @@ foreach ($result as $row)
 		<div class="row">
 			<div class="col-md-4 text-center animate-box">
 				<div class="services">
-					<span><img class="img-responsive" src="images/<?php echo $image1; ?> " alt=""></span>
+					<span><img class="img-responsive" src="images/svgImages/<?php echo $image1; ?> " alt=""></span>
 					<h3>
 						<?php echo $image1_text1; ?>
 					</h3>
@@ -152,7 +152,7 @@ foreach ($result as $row)
 			</div>
 			<div class="col-md-4 text-center animate-box">
 				<div class="services">
-					<span><img class="img-responsive" src="images/<?php echo $image2; ?>" alt=""></span>
+					<span><img class="img-responsive" src="images/svgImages/<?php echo $image2; ?>" alt=""></span>
 					<h3>
 						<?php echo $image2_text1; ?>
 					</h3>
@@ -165,7 +165,7 @@ foreach ($result as $row)
 			</div>
 			<div class="col-md-4 text-center animate-box">
 				<div class="services">
-					<span><img class="img-responsive" src="images/<?php echo $image3; ?>" alt=""></span>
+					<span><img class="img-responsive" src="images/svgImages/<?php echo $image3; ?>" alt=""></span>
 					<h3>
 						<?php echo $image3_text1; ?>
 					</h3>
@@ -836,7 +836,7 @@ foreach ($result as $row)
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<img src="images/<?php echo $client_image; ?>" alt="user">
+									<img src="images/clientImages/<?php echo $client_image; ?>" alt="user">
 								</figure>
 								<span>
 									<?php echo $client_name; ?>, via <a href="#" class="twitter">Twitter</a>
@@ -852,7 +852,7 @@ foreach ($result as $row)
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<img src="images/<?php echo $client1_image; ?>" alt="user">
+									<img src="images/clientImages/<?php echo $client1_image; ?>" alt="user">
 								</figure>
 								<span>
 									<?php echo $client1_name; ?>, via <a href="#" class="twitter">Twitter</a>
@@ -866,7 +866,7 @@ foreach ($result as $row)
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<img src="images/<?php echo $client2_image; ?>" alt="user">
+									<img src="images/clientImages/<?php echo $client2_image; ?>" alt="user">
 								</figure>
 								<span>
 									<?php echo $client2_name; ?>, via <a href="#" class="twitter">Twitter</a>
@@ -886,7 +886,7 @@ foreach ($result as $row)
 </div>
 
 
-<div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/<?php echo $discount_banner_image; ?>);">
+<div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/bannerImages/<?php echo $discount_banner_image; ?>);">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row animate-box">

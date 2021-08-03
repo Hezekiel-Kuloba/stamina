@@ -23,6 +23,15 @@ foreach ($result as $row)
     $facebook = $row['facebook'];
     $instagram = $row['instagram'];
 }   
+$statement = $pdo->prepare("SELECT * FROM social WHERE social_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)
+{
+    $twitter = $row['twitter'];
+    $facebook = $row['facebook'];
+    $instagram = $row['instagram'];
+}   
 ?>
 
 <!DOCTYPE HTML>
@@ -38,7 +47,7 @@ foreach ($result as $row)
         content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
     <meta name="author" content="freehtml5.co" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/<?php echo $logo; ?>">
+    <link rel="icon" type="image/png" href="images/faviconImages/<?php echo $favicon; ?>">
     <!-- 
 	//////////////////////////////////////////////////////
 
@@ -102,7 +111,9 @@ foreach ($result as $row)
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 text-right">
+                        <img style="margin-bottom: 5px; margin-left: 40px" src="images\icons8-whatsapp-24.png">
                             <p class="num"><?php echo $phone_number?></p>
+                            <p class="num">Follow on...</p>
                             <ul class="fh5co-social">
                                 <li><a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a></li>
                                 <li><a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a></li>
@@ -116,7 +127,7 @@ foreach ($result as $row)
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-2">
-                            <div id="fh5co-logo"><a href="index.html"><img src="images/<?php echo $logo; ?>"></a></div>
+                            <div id="fh5co-logo"><a href="index.html"><img src="images/logoImages/<?php echo $logo; ?>"></a></div>
                         </div>
                         <div class="col-xs-10 text-right menu-1">
                             <ul>

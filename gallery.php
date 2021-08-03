@@ -5,22 +5,51 @@ $statement->execute();
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row)
 {
+	$gallery_id = $row['gallery_id'];
+	$background_image = $row['background_image'];
 	$backgroundimage_text1 = $row['backgroundimage_text1'];
+	$backgroundimage_text2 = $row['backgroundimage_text2'];
+	$backgroundimage_text3 = $row['backgroundimage_text3'];
+	$text1 = $row['text1'];
+	$text2 = $row['text2'];
+	$image1 = $row['image1'];
+	$image1_text1 = $row['image1_text1'];
+	$image1_text2 = $row['image1_text2'];
+	$image2 = $row['image2'];
+	$image2_text1 = $row['image2_text1'];
+	$image2_text2 = $row['image2_text2'];
+	$image3 = $row['image3'];
+	$image3_text1 = $row['image3_text1'];
+	$image3_text2 = $row['image3_text2'];
+	$image4 = $row['image4'];
+	$image4_text1 = $row['image4_text1'];
+	$image4_text2 = $row['image4_text2'];
+	$image5 = $row['image5'];
+	$image5_text1 = $row['image5_text1'];
+	$image5_text2 = $row['image5_text2'];
+	$image6 = $row['image6'];
+	$image6_text1 = $row['image6_text1'];
+	$image6_text2 = $row['image6_text2'];
+	$image7 = $row['image7'];
+	$image7_text1 = $row['image7_text1'];
+	$image7_text2 = $row['image7_text2'];
+
+
 }
 ?>
 <div class="fh5co-loader"></div>
 
 
 <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
-	style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	style="background-image:url(images/<?php echo $background_image; ?>);" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<div class="display-t">
 					<div class="display-tc animate-box" data-animate-effect="fadeIn">
-						<h1>Gallery</h1>
-						<h2>Free html5 templates Made by <a href="#" target="_blank">freehtml5.co</a></h2>
+						<h1><?php echo $backgroundimage_text1; ?></h1>
+						<h2><?php echo $backgroundimage_text2; ?> <a href="#" target="_blank"><?php echo $backgroundimage_text3; ?></a></h2>
 					</div>
 				</div>
 			</div>
@@ -33,9 +62,8 @@ foreach ($result as $row)
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-				<h2>Gym gallery</h2>
-				<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
-					ab aliquam dolor eius.</p>
+				<h2><?php echo $text1; ?></h2>
+				<p><?php echo $text2; ?></p>
 			</div>
 		</div>
 	</div>
@@ -45,67 +73,67 @@ foreach ($result as $row)
 				<ul id="fh5co-portfolio-list">
 
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-1.jpg); ">
+						style="background-image: url(images/<?php echo $image1; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Illustration</span>
-								<h2>Useful baskets</h2>
+								<span><?php echo $image1_text1; ?></span>
+								<h2><?php echo $image1_text2; ?></h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-2.jpg); ">
+						style="background-image: url(images/<?php echo $image2; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Web Design</span>
-								<h2>Skater man in the road</h2>
-							</div>
-						</a>
-					</li>
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#">
-							<div class="case-studies-summary">
-								<span>Web Design</span>
-								<h2>Two Glas of Juice</h2>
+								<span><?php echo $image2_text1; ?></span>
+								<h2><?php echo $image2_text2; ?></h2>
 							</div>
 						</a>
 					</li>
 
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-4.jpg); ">
+						style="background-image: url(images/<?php echo $image3; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Web Design</span>
-								<h2>Timer starts now!</h2>
+								<span><?php echo $image3_text1; ?></span>
+								<h2><?php echo $image3_text2; ?></h2>
+							</div>
+						</a>
+					</li>
+
+					<li class="one-third animate-box" data-animate-effect="fadeIn"
+						style="background-image: url(images/<?php echo $image4; ?>); ">
+						<a href="#">
+							<div class="case-studies-summary">
+								<span><?php echo $image4_text1; ?></span>
+								<h2><?php echo $image4_text2; ?></h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-3.jpg); ">
+						style="background-image: url(images/<?php echo $image5; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Web Design</span>
-								<h2>Two Glas of Juice</h2>
+								<span><?php echo $image5_text1; ?></span>
+								<h2><?php echo $image5_text2; ?></h2>
 							</div>
 						</a>
 					</li>
 					<li class="two-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-5.jpg); ">
+						style="background-image: url(images/<?php echo $image6; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Illustration</span>
-								<h2>Beautiful sunset</h2>
+								<span><?php echo $image6_text1; ?></span>
+								<h2><?php echo $image6_text2; ?></h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
-						style="background-image: url(images/gallery-3.jpg); ">
+						style="background-image: url(images/<?php echo $image7; ?>); ">
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>Web Design</span>
-								<h2>Two Glas of Juice</h2>
+								<span><?php echo $image7_text1; ?></span>
+								<h2><?php echo $image7_text2; ?></h2>
 							</div>
 						</a>
 					</li>
