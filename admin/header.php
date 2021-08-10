@@ -58,7 +58,7 @@ if(!isset($_SESSION['user'])) {
 					<span class="sr-only">Toggle navigation</span>
 				</a>
 
-				<span style="float:left;line-height:50px;color:#fff;padding-left:15px;font-size:18px;">Admin Panel</span>
+				<span style="float:left;line-height:50px;monday_schedule:#fff;padding-left:15px;font-sunday_schedule:18px;">Admin Panel</span>
     <!-- Top Bar ... User Inforamtion .. Login/Log out Area -->
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
@@ -99,7 +99,12 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if( ($cur_page == 'gallery_settings.php') ) {echo 'active';} ?>">
 			          <a href="gallery_settings.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Gallery Settings</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Course Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'user_settings.php') ) {echo 'active';} ?>">
+			          <a href="user_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Clients Settings</span>
 			          </a>
 			        </li>
 			        <li class="treeview <?php if( ($cur_page == 'header_settings.php') ) {echo 'active';} ?>">
@@ -118,9 +123,14 @@ if(!isset($_SESSION['user'])) {
 			            <i class="fa fa-hand-o-right"></i> <span>Pricing Settings</span>
 			          </a>
 			        </li>
-			        <li class="treeview <?php if( ($cur_page == 'conatct_settings.php') ) {echo 'active';} ?>">
-			          <a href="conatct_settings.php">
+			        <li class="treeview <?php if( ($cur_page == 'contact_settings.php') ) {echo 'active';} ?>">
+			          <a href="contact_settings.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Contact Settings</span>
+			          </a>
+			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'schedule_settings.php') ) {echo 'active';} ?>">
+			          <a href="schedule_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Schedule settings</span>
 			          </a>
 			        </li>
 			        <li class="treeview <?php if( ($cur_page == 'footer_settings.php') ) {echo 'active';} ?>">
@@ -128,6 +138,29 @@ if(!isset($_SESSION['user'])) {
 			            <i class="fa fa-hand-o-right"></i> <span>Footer Settings</span>
 			          </a>
 			        </li>
+			        <li class="treeview <?php if( ($cur_page == 'blog_settings.php') ) {echo 'active';} ?>">
+			          <a href="blog_settings.php">
+			            <i class="fa fa-hand-o-right"></i> <span>Blog Settings</span>
+			          </a>
+			        </li>
+					<li class="treeview <?php if( ($cur_page == 'sunday_schedule.php') || ($cur_page == 'monday_schedule.php') || ($cur_page == 'tuesday_schedule.php') || ($cur_page == 'wednesday_schedule.php') || ($cur_page == 'thursday_schedule.php') || ($cur_page == 'friday_schedule.php')  || ($cur_page == 'saturday_schedule.php') ) {echo 'active';} ?>">
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>
+                            <span>Schedule Settings</span>
+                            <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="sunday_schedule.php"><i class="fa fa-circle-o"></i> sunday_schedule</a></li>
+                            <li><a href="monday_schedule.php"><i class="fa fa-circle-o"></i> monday_schedule</a></li>
+                            <li><a href="tuesday_schedule.php"><i class="fa fa-circle-o"></i> tuesday_schedule</a></li>
+                            <li><a href="wednesday_schedule.php"><i class="fa fa-circle-o"></i> wednesday_schedule</a></li>
+                            <li><a href="thursday_schedule.php"><i class="fa fa-circle-o"></i> thursday_schedule</a></li>
+                            <li><a href="friday_schedule.php"><i class="fa fa-circle-o"></i> friday_schedule</a></li>
+                            <li><a href="saturday_schedule.php"><i class="fa fa-circle-o"></i> Saturday_schedule</a></li>
+                        </ul>
+                    </li>
 
                     
       			</ul>

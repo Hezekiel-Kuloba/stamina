@@ -43,36 +43,6 @@
 	        	height: 300
 	        });
 	    });
-		$(".top-cat").on('change',function(){
-			var id=$(this).val();
-			var dataString = 'id='+ id;
-			$.ajax
-			({
-				type: "POST",
-				url: "get-mid-category.php",
-				data: dataString,
-				cache: false,
-				success: function(html)
-				{
-					$(".mid-cat").html(html);
-				}
-			});			
-		});
-		$(".mid-cat").on('change',function(){
-			var id=$(this).val();
-			var dataString = 'id='+ id;
-			$.ajax
-			({
-				type: "POST",
-				url: "get-end-category.php",
-				data: dataString,
-				cache: false,
-				success: function(html)
-				{
-					$(".end-cat").html(html);
-				}
-			});			
-		});
 	</script>
 
 	<script>

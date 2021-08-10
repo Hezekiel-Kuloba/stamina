@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   padding: 0;
   z-index: 1001;
+  position: sticky;
 }
 .fh5co-nav .top-menu {
   padding: 28px 0;
@@ -635,13 +636,13 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 30px;
   }
 }
-.trainer img {
+/* .trainer img {
   width: 84%;
-}
+} */
 .trainer .title {
   width: 100%;
-  position: absolute;
-  bottom: 60%;
+  position: relative;
+  bottom: 30%;
   left: 42%;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -1069,7 +1070,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-testimonial .testimony-slide figure img {
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1181,9 +1182,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-blog {
   margin-bottom: 60px;
 }
-.fh5co-blog a img {
+/* .fh5co-blog a img {
   width: 100%;
-}
+} */
 @media screen and (max-width: 768px) {
   .fh5co-blog {
     width: 100%;
@@ -1738,3 +1739,4 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+

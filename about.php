@@ -1,12 +1,27 @@
 <?php require_once('header.php'); ?>
 
 <?php 
+$statement = $pdo->prepare("SELECT * FROM trainer_common WHERE trainer_common_id=1");
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row)
+{
+	$background_image = $row['background_image'];
+	$backgroundimage_text1 = $row['backgroundimage_text1'];
+	$text1 = $row['text1'];
+	$text2 = $row['text2'];
+}
 $statement = $pdo->prepare("SELECT * FROM trainer WHERE trainer_id=1");
 $statement->execute();
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row)
 {
-	// $logo = $row['logo'];
+	$trainer_id = $row['trainer_id'];
+	$trainer1_image = $row['trainer1_image'];
+	$trainer1_name = $row['trainer1_name'];
+	$trainer1_skill = $row['trainer1_skill'];
+	$about_me = $row['about_me'];
+	$aboutme_paragraph = $row['aboutme_paragraph'];
 }
 ?>
 
@@ -18,8 +33,9 @@ foreach ($result as $row)
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<div class="display-t">
 					<div class="display-tc animate-box" data-animate-effect="fadeIn">
-						<h1>Fitness Trainer</h1>
-						<h2>Free html5 templates Made by <a href="#" target="_blank">freehtml5.co</a></h2>
+						<h1>
+							<?php echo $backgroundimage_text1; ?>
+						</h1>
 					</div>
 				</div>
 			</div>
@@ -32,67 +48,74 @@ foreach ($result as $row)
 	<div class="container">
 		<div class="row animate-box">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-				<h2>Fitness Expert</h2>
-				<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
-					ab aliquam dolor eius.</p>
+				<h2>
+					<?php echo $text1; ?>
+				</h2>
+				<p>
+					<?php echo $text2; ?>.
+				</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4 animate-box">
-				<div class="trainer">
-					<a href="#"><img class="img-responsive" src="images/trainer-1.jpg" alt="trainer"></a>
-					<div class="title">
-						<h3><a href="#">Angel Adams</a></h3>
-						<span>Dance Expert</span>
+		<?php
+		$i=0;
+		$statement = $pdo->prepare("SELECT trainer_id, trainer1_image, trainer1_name, trainer1_skill, about_me, aboutme_paragraph FROM trainer ORDER BY trainer_id ASC  ");
+		$statement->execute();
+		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+		
+		foreach ($result as $row) {
+			
+			$i++;
+			?>
+				<div class="row">
+					<div class="col-md-6 col-sm-4 animate-box h-50%">
+						<div class="trainer">
+							<a href="#"><img width="400" height="400"
+									src="images/trainerImages/<?php echo $row['trainer1_image']; ?>" alt="trainer"></a>
+							<div class="title" style="margin-bottom: 100px;">
+								<h3><a href="#">
+										<?php echo $row['trainer1_name']; ?>
+									</a></h3>
+								<span>
+									<?php echo $row['trainer1_skill']; ?>
+								</span>
+							</div>
+							<!-- <div class="desc text-center">
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								</ul>
+							</div> -->
+						</div>
 					</div>
-					<div class="desc text-center">
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 animate-box">
-				<div class="trainer">
-					<a href="#"><img class="img-responsive" src="images/trainer-2.jpg" alt="trainer"></a>
-					<div class="title">
-						<h3><a href="#">Arnold Smith</a></h3>
-						<span>Body Building Expert</span>
-					</div>
-					<div class="desc text-center">
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 animate-box">
-				<div class="trainer">
-					<a href="#"><img class="img-responsive" src="images/trainer-3.jpg" alt="trainer"></a>
-					<div class="title">
-						<h3><a href="#">Rachel Seely</a></h3>
-						<span>Yoga Expert</span>
-					</div>
-					<div class="desc text-center">
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="col-md-6 col-sm-4 animate-box">
+						<div>
 
+							<div class="text-center fh5co-heading">
+								<h2>
+									<a href="courses.php">
+										<?php echo $row['about_me']; ?>
+									</a>
+								</h2>
+								<p>
+									<?php echo $row['aboutme_paragraph']; ?>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php
+					}
+					?>
+	</div>
+
+</div>
 
 <div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/img_bg_3.jpg);">
 	<div class="overlay"></div>
@@ -111,68 +134,7 @@ foreach ($result as $row)
 	</div>
 </div>
 
-
-<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
-	<div class="overlay"></div>
-	<div class="container">
-		<div class="row row-pb-md">
-			<div class="col-md-4 fh5co-widget">
-				<h3>A Little About Stamina.</h3>
-				<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci
-					architecto culpa amet.</p>
-				<p><a class="btn btn-primary" href="#">Become A Member</a></p>
-			</div>
-			<div class="col-md-8">
-				<h3>Classes</h3>
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="gallery.php">Gallery</a></li>
-						<li><a href="about.php">About</a></li>
-						<li><a href="pricing.php">Pricing</a></li>
-						<li><a href="contact.php">Contact</a></li>
-						<li><a href="blog.html">Blog</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Boxing</a></li>
-						<li><a href="#">Martial Arts</a></li>
-						<li><a href="#">Karate</a></li>
-						<li><a href="#">Kungfu</a></li>
-						<li><a href="#">Body Building</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Badminton</a></li>
-						<li><a href="#">Body Building</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="row copyright">
-			<div class="col-md-12 text-center">
-				<p>
-					<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-				</p>
-				<ul class="fh5co-social-icons">
-					<li><a href="#"><i class="icon-twitter"></i></a></li>
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin"></i></a></li>
-					<li><a href="#"><i class="icon-dribbble"></i></a></li>
-				</ul>
-				</p>
-			</div>
-		</div>
-
-	</div>
-</footer>
+<?php require_once('footer.php'); ?>
 </div>
 
 <div class="gototop js-top">

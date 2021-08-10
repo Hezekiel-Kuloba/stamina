@@ -150,147 +150,152 @@ foreach ($result as $row) {
 
 <section class="content">
 
-<div class="row">
-    <div class="col-md-12">
-                        
-            <div class="nav-tabs-custom">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Logo</a></li>
-                    <li><a href="#tab_2" data-toggle="tab">Favicon</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Contact</a></li>
-                    <li><a href="#tab_4" data-toggle="tab">Social Media</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tab_1">
-
-
-                        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-                        <div class="box box-info">
-                            <div class="box-body">
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Existing Photo</label>
-                                    <div class="col-sm-6" style="padding-top:6px;">
-                                        <img src="../images/logoImages/<?php echo $logo; ?>" class="existing-photo" style="height:80px;">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">New Photo</label>
-                                    <div class="col-sm-6" style="padding-top:6px;">
-                                        <input type="file" name="photo_logo">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-success pull-left" name="form1">Update Logo</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </form>
-
-                        
-
-
-                    </div>
-                    <div class="tab-pane" id="tab_2">
-
-                        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-                        <div class="box box-info">
-                            <div class="box-body">
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Existing Photo</label>
-                                    <div class="col-sm-6" style="padding-top:6px;">
-                                        <img src="../images/faviconImages/<?php echo $favicon; ?>" class="existing-photo" style="height:40px;">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">New Photo</label>
-                                    <div class="col-sm-6" style="padding-top:6px;">
-                                        <input type="file" name="photo_favicon">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-success pull-left" name="form2">Update Favicon</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </form>
-
-
-                    </div>
-                    <div class="tab-pane" id="tab_3">
-
-                        <form class="form-horizontal" action="" method="post">
-                        <div class="box box-info">
-                            <div class="box-body">
-                                <!-- <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Contact Email </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="contact_email" value="<?php echo $contact_email; ?>">
-                                    </div>
-                                </div> -->
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Contact Phone Number </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="phone_number" value="<?php echo $phone_number; ?>">
-                                    </div>
-                                </div>                            
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-success pull-left" name="form3">Update</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </form>
-
-
-                    </div>
-                    <div class="tab-pane" id="tab_4">
-
-                        <form class="form-horizontal" action="" method="post">
-                        <div class="box box-info">
-                            <div class="box-body">
-                                <!-- <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Contact Email </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="contact_email" value="<?php echo $contact_email; ?>">
-                                    </div>
-                                </div> -->
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Twitter Link Address </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="twitter" value="<?php echo $twitter; ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Facebook Link Address  </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="facebook" value="<?php echo $facebook; ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Instagram Link Address </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="instagram" value="<?php echo $instagram; ?>">
-                                    </div>
-                                </div>
+    <div class="row">
+        <div class="col-md-12">
                             
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-success pull-left" name="form4">Update</button>
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_1" data-toggle="tab">Logo</a></li>
+                        <li><a href="#tab_2" data-toggle="tab">Favicon</a></li>
+                        <li><a href="#tab_3" data-toggle="tab">Contact</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Social Media</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_1">
+
+
+                            <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                            <div class="box box-info">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Existing Photo</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <img src="../images/logoImages/<?php echo $logo; ?>" class="existing-photo" style="height:80px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">New Photo</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <input type="file" name="photo_logo">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-success pull-left" name="form1">Update Logo</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            </form>
+
+                            
+
+
                         </div>
-                        </form>
+                        <div class="tab-pane" id="tab_2">
+
+                            <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                            <div class="box box-info">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Existing Photo</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <img src="../images/faviconImages/<?php echo $favicon; ?>" class="existing-photo" style="height:40px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">New Photo</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <input type="file" name="photo_favicon">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-success pull-left" name="form2">Update Favicon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
 
 
+                        </div>
+                        <div class="tab-pane" id="tab_3">
+
+                            <form class="form-horizontal" action="" method="post">
+                            <div class="box box-info">
+                                <div class="box-body">
+                                    <!-- <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Contact Email </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="contact_email" value="<?php echo $contact_email; ?>">
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Contact Phone Number </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="phone_number" value="<?php echo $phone_number; ?>">
+                                        </div>
+                                    </div>                            
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-success pull-left" name="form3">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+
+
+                        </div>
+                        <div class="tab-pane" id="tab_4">
+
+                            <form class="form-horizontal" action="" method="post">
+                            <div class="box box-info">
+                                <div class="box-body">
+                                    <!-- <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Contact Email </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="contact_email" value="<?php echo $contact_email; ?>">
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Twitter Link Address </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="twitter" value="<?php echo $twitter; ?>">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Facebook Link Address  </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="facebook" value="<?php echo $facebook; ?>">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Instagram Link Address </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="instagram" value="<?php echo $instagram; ?>">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-success pull-left" name="form4">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+
+                        </div>
                     </div>
+                </div>
+        </div>
+    </div>
+</section>
+
                     <?php require_once('footer.php'); ?>

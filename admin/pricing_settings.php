@@ -596,7 +596,7 @@ foreach ($result as $row) {
 
 
                         </div>
-                        <div class="tab-pane " id="tab_">
+                        <div class="tab-pane " id="tab_6">
 
 
 
@@ -693,4 +693,8 @@ foreach ($result as $row) {
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
                     <?php require_once('footer.php'); ?>

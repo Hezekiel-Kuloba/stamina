@@ -110,19 +110,47 @@ foreach ($result as $row)
             <div class="top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 text-right">
-                        <img style="margin-bottom: 5px; margin-left: 40px" src="images\icons8-whatsapp-24.png">
-                            <p class="num"><?php echo $phone_number?></p>
-                            <p class="num">Follow on...</p>
-                            <ul class="fh5co-social">
-                                <li><a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a></li>
-                                <li><a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a></li>
-                                <li><a href="<?php echo $instagram; ?>"><i class="icon-instagram"></i></a></li>
-                            </ul>
+                        <div class="col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                <div class="left">
+                                    <img style="margin-bottom: 5px; margin-left: 40px" src="images\icons8-whatsapp-24.png">
+                                    <p class="num"><?php echo $phone_number?></p>
+                                    <p class="num">Follow on...</p>
+                                    <ul class="fh5co-social">
+                                        <li><a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a></li>
+                                        <li><a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a></li>
+                                        <li><a href="<?php echo $instagram; ?>"><i class="icon-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                <div class="right">
+                                <?php
+                                    if(isset($_SESSION['customer'])) {
+                                        ?>
+                                        <div style="color:white; display: flex; margin: 0; justify-content: flex-start; padding: 0%;">
+                                            <?php echo $_SESSION['customer']['cust_email']; ?>
+                                            <a href="logout.php">Log out</a>
+                                        </div>
+                                        
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <div style="display: flex; margin: 0%; justify-content: flex-start; padding: 0%;">
+                                            <a style=" color:white;" href="login.php">Login</a>
+                                            <a style=" color:white;" href="registration.php">Register</a>
+                                        </div>
+                                        <?php	
+                                    }
+                                    ?> 
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+        
             <div class="top-menu">
                 <div class="container">
                     <div class="row">
@@ -132,10 +160,11 @@ foreach ($result as $row)
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
                                 <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="gallery.php">Gallery</a></li>
+                                <li><a href="courses.php">Courses</a></li>
+                                <li><a href="schedule.php">Schedule</a></li>
                                 <li><a href="about.php">Trainer</a></li>
                                 <li><a href="pricing.php">Pricing</a></li>
-                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog.php">Blog</a></li>
                                 <!-- <li class="has-dropdown">
                                     <a href="blog.html">Blog</a>
                                     <ul class="dropdown">
@@ -181,6 +210,3 @@ foreach ($result as $row)
         <script src="js/main.js"></script>
 
 
-</body>
-
-</html>

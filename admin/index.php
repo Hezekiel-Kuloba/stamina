@@ -865,6 +865,11 @@ foreach ($result as $row) {
                         </form>
 
                     </div>
+                
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
                 <?php require_once('footer.php'); ?>
