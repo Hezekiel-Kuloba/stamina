@@ -610,119 +610,84 @@ INSERT INTO `saturday_schedule` (`saturday_schedule_id`, `image1`, `time1`, `cla
 
 CREATE TABLE `trainer` (
 `trainer_id` int(10) NOT NULL,
-`background_image` varchar(255) NOT NULL,
-`backgroundimage_text1` text NOT NULL,
-`backgroundimage_text2` text NOT NULL,
-`backgroundimage_text3` text NOT NULL,
-`text1` text NOT NULL,
-`text2` text NOT NULL,
 `trainer1_image` varchar(255) NOT NULL,
 `trainer1_name` text NOT NULL,
 `trainer1_skill` text NOT NULL,
-`trainer1_twitter` varchar(255) NOT NULL,
-`trainer1_facebook` varchar(255) NOT NULL,
-`trainer1_instagram` varchar(255) NOT NULL,
-`trainer2_image` varchar(255) NOT NULL,
-`trainer2_name` text NOT NULL,
-`trainer2_skill` text NOT NULL,
-`trainer2_twitter` varchar(255) NOT NULL,
-`trainer2_facebook` varchar(255) NOT NULL,
-`trainer2_instagram` varchar(255) NOT NULL,
-`trainer3_image` varchar(255) NOT NULL,
-`trainer3_name` text NOT NULL,
-`trainer3_skill` text NOT NULL,
-`trainer3_twitter` varchar(255) NOT NULL,
-`trainer3_facebook` varchar(255) NOT NULL,
-`trainer3_instagram` varchar(255) NOT NULL
+`about_me` text NOT NULL,
+`aboutme_paragraph` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `trainer` (`trainer_id`, `background_image`, `backgroundimage_text1`, `backgroundimage_text2`, `backgroundimage_text3`, `text1`, `text2`, `trainer1_image`, `trainer1_name`, `trainer1_skill`, `trainer1_twitter`, `trainer1_facebook`, `trainer1_instagram`, `trainer2_image`, `trainer2_name`, `trainer2_skill`, `trainer2_twitter`, `trainer2_facebook`, `trainer2_instagram`, `trainer3_image`, `trainer3_name`, `trainer3_skill`, `trainer3_twitter`, `trainer3_facebook`, `trainer3_instagram` )
+INSERT INTO `trainer` (`trainer_id`, `trainer1_image`, `trainer1_name`, `trainer1_skill`, `about_me`, `aboutme_paragraph` )
+VALUES (
+1,
+'trainer-1.jpg',
+'Angel Adams',
+'Body Building Expert',
+'About me',
+'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.'
+);
+
+CREATE TABLE `trainer_common` (
+`trainer_common_id` int(10) NOT NULL,
+`background_image` varchar(255) NOT NULL,
+`backgroundimage_text1` text NOT NULL,
+`text1` text NOT NULL,
+`text2` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `trainer_common` (`trainer_common_id`, `background_image`, `backgroundimage_text1`, `text1`, `text2` )
 VALUES (
 1,
 'img_bg_2.jpg',
 'Fitness Trainer',
-'Free html5 templates Made by',
-'freehtml5.co',
 'Fitness Expert',
-'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.',
+'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.'
+);
+
+CREATE TABLE `blog` (
+`blog_id` int(10) NOT NULL,
+`blog_image` varchar(255) NOT NULL,
+`blog_date` varchar(255) NOT NULL,
+`blog_title` text NOT NULL,
+`blog_paragraph` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `blog` (`blog_id`, `blog_image`, `blog_date`, `blog_title`, `blog_paragraph`)
+VALUES (
+1,
 'trainer-1.jpg',
-'Angel Adams',
+'Tuesday August 10th',
 'Body Building Expert',
-'twitter_handle',
-'facebook_handle',
-'instagram_handle',
-'trainer-1.jpg',
-'Angel Adams',
-'Body Building Expert',
-'twitter_handle',
-'facebook_handle',
-'instagram_handle',
-'trainer-1.jpg',
-'Angel Adams',
-'Body Building Expert',
-'twitter_handle',
-'facebook_handle',
-'instagram_handle'
+'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.'
+);
+
+CREATE TABLE `blog_common` (
+`blog_common_id` int(10) NOT NULL,
+`background_image` varchar(255) NOT NULL,
+`backgroundimage_text1` text NOT NULL,
+`text1` text NOT NULL,
+`text2` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `blog_common` (`blog_common_id`, `background_image`, `backgroundimage_text1`, `text1`, `text2` )
+VALUES (
+1,
+'img_bg_2.jpg',
+'Fitness Trainer',
+'Read Our Blog',
+'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.'
 );
 
 CREATE TABLE `gallery` (
 `gallery_id` int(10) NOT NULL,
-`background_image` varchar(255) NOT NULL,
-`backgroundimage_text1` text NOT NULL,
-`backgroundimage_text2` text NOT NULL,
-`backgroundimage_text3` text NOT NULL,
-`text1` text NOT NULL,
-`text2` text NOT NULL,
 `image1` varchar(255) NOT NULL,
 `image1_text1` text NOT NULL,
-`image1_text2` text NOT NULL,
-`image2` varchar(255) NOT NULL,
-`image2_text1` text NOT NULL,
-`image2_text2` text NOT NULL,
-`image3` varchar(255) NOT NULL,
-`image3_text1` text NOT NULL,
-`image3_text2` text NOT NULL,
-`image4` varchar(255) NOT NULL,
-`image4_text1` text NOT NULL,
-`image4_text2` text NOT NULL,
-`image5` varchar(255) NOT NULL,
-`image5_text1` text NOT NULL,
-`image5_text2` text NOT NULL,
-`image6` varchar(255) NOT NULL,
-`image6_text1` text NOT NULL,
-`image6_text2` text NOT NULL,
-`image7` varchar(255) NOT NULL,
-`image7_text1` text NOT NULL,
-`image7_text2` text NOT NULL
+`image1_text2` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `gallery` (`gallery_id`, `background_image`, `backgroundimage_text1`, `backgroundimage_text2`, `backgroundimage_text3`, `text1`, `text2`, `image1`, `image1_text1`, `image1_text2`, `image2`, `image2_text1`, `image2_text2`, `image3`, `image3_text1`, `image3_text2`, `image4`, `image4_text1`, `image4_text2`, `image5`, `image5_text1`, `image5_text2`, `image6`, `image6_text1`, `image6_text2`, `image7`, `image7_text1`, `image7_text2` )
+INSERT INTO `gallery` (`gallery_id`, `image1`, `image1_text1`, `image1_text2` )
 VALUES (
 1,
-'img_bg_2.jpg',
-'Gallery',
-'Free html5 templates Made by ',
-'freehtml5.co',
-'Gym gallery',
-'Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
-'gallery-3.jpg',
-'Web Design',	
-'Two Glas of Juice',
 'gallery-3.jpg',
 'Web Design',	
 'Two Glas of Juice'
@@ -837,13 +802,10 @@ CREATE TABLE `contact` (
 `backgroundimage_text3` text NOT NULL,
 `text1` text NOT NULL, 
 `text2` text NOT NULL, 
-`text3` text NOT NULL, 
-`twitter` varchar(255) NOT NULL,
-`facebook` varchar(255) NOT NULL,
-`instagram` varchar(255) NOT NULL
+`text3` text NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `contact` (`contact_id`, `background_image`, `backgroundimage_text1`, `backgroundimage_text2`, `backgroundimage_text3`, `text1`, `text2`, `text3`, `twitter`, `facebook`, `instagram` )
+INSERT INTO `contact` (`contact_id`, `background_image`, `backgroundimage_text1`, `backgroundimage_text2`, `backgroundimage_text3`, `text1`, `text2`, `text3`)
 VALUES (
 1,
 'img_bg_2.jpg',
@@ -852,26 +814,56 @@ VALUES (
 'freehtml5.co',
 '198 West 21th Street, Suite 721 New York NY 10016',
 '0712345678',
-'walumbehezzy@gmail.com',
-'twitter',
-'facebook',
-'instagram'
+'walumbehezzy@gmail.com'
+);
+CREATE TABLE `schedule` (
+`schedule_id` int(10) NOT NULL,
+`background_image` varchar(255) NOT NULL,
+`backgroundimage_text1` text NOT NULL,
+`text1` text NOT NULL, 
+`text2` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `schedule` (`schedule_id`, `background_image`, `backgroundimage_text1`, `text1`, `text2`)
+VALUES (
+1,
+'img_bg_2.jpg',
+'Contact Us',
+'Free html5 templates Made by ',
+'freehtml5.co'
+);
+CREATE TABLE `courses` (
+`courses_id` int(10) NOT NULL,
+`background_image` varchar(255) NOT NULL,
+`backgroundimage_text1` text NOT NULL,
+`text1` text NOT NULL, 
+`text2` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `courses` (`courses_id`, `background_image`, `backgroundimage_text1`, `text1`, `text2`)
+VALUES (
+1,
+'img_bg_2.jpg',
+'Contact Us',
+'Free html5 templates Made by ',
+'freehtml5.co'
 );
 
 CREATE TABLE `footer` (
 `footer_id` int(10) NOT NULL,
+`footer_image` varchar(255) NOT NULL,
 `text1` text NOT NULL,
 `text2` text NOT NULL,
 `text3` text NOT NULL,
 `copyright_text` varchar(255) NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `footer`( `footer_id`, `text1`, `text2`, `text3`, `copyright_text` )
+INSERT INTO `footer`( `footer_id`, `footer_image`, `text1`, `text2`, `copyright_text` )
 VALUES (
 1,
-'text1',
-'text2',
-'text3',
+'img_bg_1.jpg',
+'A Little About Stamina.',
+'Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.',
 'copyright_text'
 );
 
@@ -910,111 +902,167 @@ INSERT INTO `tbl_admin` (`admin_id`, `full_name`, `email`, `phone`, `password`, 
 (1, 'Hezekiel Kuloba', 'walumbehezekiel@gmail.com', '', '81dc9bdb52d04dc20036dbd8313ed055', 'user-1.jpg', 'Super Admin', 'Active'),
 (13, 'William Musyoki', 'williammusyoki@gmail.com', '', '81dc9bdb52d04dc20036dbd8313ed055', 'user-13.jpg', 'Admin', 'Active');
 
+CREATE TABLE `tbl_customer` (
+  `customer_id` int(11) NOT NULL,
+  `cust_name` varchar(100) NOT NULL,
+  `cust_email` varchar(100) NOT NULL,
+  `cust_phone` varchar(50) NOT NULL,
+  `cust_password` varchar(100) NOT NULL,
+  `cust_token` varchar(255) NOT NULL,
+  `cust_datetime` varchar(100) NOT NULL,
+  `cust_timestamp` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_customer`
+--
+
+INSERT INTO `tbl_customer` (`customer_id`, `cust_name`, `cust_email`, `cust_phone`, `cust_password`, `cust_token`, `cust_datetime`, `cust_timestamp`) VALUES
+(4, 'Hammad', 'wonk.xags@gmail.com', '49857243857', 'e10adc3949ba59abbe56e057f20f883e', '34d03a29d49aaba635ad6efee22c4d30', '2018-04-21 02:40:10', '1524264010');
 
 
 ALTER TABLE `header`
   ADD PRIMARY KEY (`header_id`);
 
 ALTER TABLE `header`
-  MODIFY `header_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `header_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `home`
   ADD PRIMARY KEY (`home_id`);
 
 ALTER TABLE `home`
-  MODIFY `home_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `home_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `sunday_schedule`
   ADD PRIMARY KEY (`sunday_schedule_id`);
 
 
 ALTER TABLE `sunday_schedule`
-  MODIFY `sunday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `sunday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `monday_schedule`
   ADD PRIMARY KEY (`monday_schedule_id`);
 
 
 ALTER TABLE `monday_schedule`
-  MODIFY `monday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `monday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `tuesday_schedule`
   ADD PRIMARY KEY (`tuesday_schedule_id`);
 
 
 ALTER TABLE `tuesday_schedule`
-  MODIFY `tuesday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `tuesday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `wednesday_schedule`
   ADD PRIMARY KEY (`wednesday_schedule_id`);
 
 
 ALTER TABLE `wednesday_schedule`
-  MODIFY `wednesday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `wednesday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `thursday_schedule`
   ADD PRIMARY KEY (`thursday_schedule_id`);
 
 
 ALTER TABLE `thursday_schedule`
-  MODIFY `thursday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `thursday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `friday_schedule`
   ADD PRIMARY KEY (`friday_schedule_id`);
 
 
 ALTER TABLE `friday_schedule`
-  MODIFY `friday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `friday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `saturday_schedule`
   ADD PRIMARY KEY (`saturday_schedule_id`);
 
 
 ALTER TABLE `saturday_schedule`
-  MODIFY `saturday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `saturday_schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `trainer`
   ADD PRIMARY KEY (`trainer_id`);
 
 
 ALTER TABLE `trainer`
-  MODIFY `trainer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `trainer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
+ALTER TABLE `trainer_common`
+  ADD PRIMARY KEY (`trainer_common_id`);
+
+
+ALTER TABLE `trainer_common`
+  MODIFY `trainer_common_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`blog_id`);
+
+
+ALTER TABLE `blog`
+  MODIFY `blog_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
+ALTER TABLE `blog_common`
+  ADD PRIMARY KEY (`blog_common_id`);
+
+
+ALTER TABLE `blog_common`
+  MODIFY `blog_common_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `gallery`
   ADD PRIMARY KEY (`gallery_id`);
 
 ALTER TABLE `gallery`
-  MODIFY `gallery_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `gallery_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `pricing`
   ADD PRIMARY KEY (`pricing_id`);
 
 ALTER TABLE `pricing`
-  MODIFY `pricing_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pricing_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`contact_id`);
 
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `contact_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
+ALTER TABLE `schedule`
+  ADD PRIMARY KEY (`schedule_id`);
+
+ALTER TABLE `schedule`
+  MODIFY `schedule_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`courses_id`);
+
+ALTER TABLE `courses`
+  MODIFY `courses_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `footer`
   ADD PRIMARY KEY (`footer_id`);
 
 ALTER TABLE `footer`
-  MODIFY `footer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `footer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `social`
   ADD PRIMARY KEY (`social_id`);
 
 ALTER TABLE `social`
-  MODIFY `social_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `social_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 ALTER TABLE `tbl_admin`
   ADD PRIMARY KEY (`admin_id`);
 
 ALTER TABLE `tbl_admin`
   MODIFY `admin_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+ALTER TABLE `tbl_customer`
+  ADD PRIMARY KEY (`customer_id`);
+
+ALTER TABLE `tbl_customer`
+  MODIFY `customer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
