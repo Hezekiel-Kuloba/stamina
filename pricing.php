@@ -65,7 +65,7 @@ foreach ($result as $row)
 <div class="fh5co-loader"></div>
 
 <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
-	style="background-image:url(images/<?php echo $background_image; ?>);" data-stellar-background-ratio="0.5">
+	style="background-image:url(images/pricingImages/<?php echo $background_image; ?>);" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row">

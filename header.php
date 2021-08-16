@@ -91,6 +91,8 @@ foreach ($result as $row)
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/templatemo-stand-blog.css">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -101,7 +103,7 @@ foreach ($result as $row)
 
 </head>
 
-<body>
+<body style="margin: 0;">
 
     <div class="fh5co-loader"></div>
 
@@ -111,19 +113,19 @@ foreach ($result as $row)
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                            <div class="col-xs-12 ">
                                 <div class="left">
                                     <img style="margin-bottom: 5px; margin-left: 40px" src="images\icons8-whatsapp-24.png">
-                                    <p class="num"><?php echo $phone_number?></p>
-                                    <p class="num">Follow on...</p>
+                                    <p style="justify-content: flex-start;" class="num"><?php echo $phone_number?></p>
+                                    <!-- <p class="num">Follow on...</p>
                                     <ul class="fh5co-social">
                                         <li><a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a></li>
                                         <li><a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a></li>
                                         <li><a href="<?php echo $instagram; ?>"><i class="icon-instagram"></i></a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                            <!-- <div class="col-md-6 col-sm-6 col-xs-12 ">
                                 <div class="right">
                                 <?php
                                     if(isset($_SESSION['customer'])) {
@@ -144,7 +146,7 @@ foreach ($result as $row)
                                     }
                                     ?> 
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         
                     </div>

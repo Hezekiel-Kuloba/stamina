@@ -109,7 +109,7 @@ foreach ($result as $row)
 		</form>
 	</div>
 </div>
-<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
+<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/footerImages/<?php echo $footer_image; ?> );" role="contentinfo">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row row-pb-md">

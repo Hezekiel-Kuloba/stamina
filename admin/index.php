@@ -659,7 +659,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">New Photo</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <input type="file" name="">photo_discount_banner
+                                            <input type="file" name="photo_discount_banner">photo_discount_banner
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -17,6 +17,8 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 #page {
@@ -374,6 +376,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
   margin-top: 100px;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -444,7 +447,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   top: .05em;
   font-family: 'icomoon';
-  speak: none;
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1738,5 +1741,5 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+
 

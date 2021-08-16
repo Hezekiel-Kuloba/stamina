@@ -44,78 +44,89 @@ foreach ($result as $row)
 </header>
 
 
-<div id="fh5co-trainer">
-	<div class="container">
-		<div class="row animate-box">
-			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-				<h2>
-					<?php echo $text1; ?>
-				</h2>
-				<p>
-					<?php echo $text2; ?>.
-				</p>
-			</div>
-		</div>
-		<?php
-		$i=0;
-		$statement = $pdo->prepare("SELECT trainer_id, trainer1_image, trainer1_name, trainer1_skill, about_me, aboutme_paragraph FROM trainer ORDER BY trainer_id ASC  ");
-		$statement->execute();
-		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
-		
-		foreach ($result as $row) {
-			
-			$i++;
-			?>
-				<div class="row">
-					<div class="col-md-6 col-sm-4 animate-box h-50%">
-						<div class="trainer">
-							<a href="#"><img width="400" height="400"
-									src="images/trainerImages/<?php echo $row['trainer1_image']; ?>" alt="trainer"></a>
-							<div class="title" style="margin-bottom: 100px;">
-								<h3><a href="#">
-										<?php echo $row['trainer1_name']; ?>
-									</a></h3>
-								<span>
-									<?php echo $row['trainer1_skill']; ?>
-								</span>
+<section class="blog-posts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="all-blog-posts">
+              <div class="row">
+			  <?php
+							$i=0;
+							$statement = $pdo->prepare("SELECT trainer_id, trainer1_image, trainer1_name, trainer1_skill, about_me, aboutme_paragraph FROM trainer ORDER BY trainer_id ASC ");
+							$statement->execute();
+							$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+							
+							foreach ($result as $row) {
+								
+								$i++;
+								?>
+
+                <div class="col-lg-12">
+                  <div class="blog-post">
+					  	<div class="col-lg-6">
+							<div class="blog-thumb">
+								<div class="down-content">
+								<h4><?php echo $row['trainer1_name']; ?></h4>
+								</div>
+								<div class="hezzy">	
+								<img style="width:90%;" src="images\trainerImages\<?php echo $row['trainer1_image']; ?>" alt="">
+								</div>
 							</div>
-							<!-- <div class="desc text-center">
-								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					<div class="col-lg-6">
+						<div class="down-content">
+						<span style="text-decoration: underline;" ><?php echo $row['trainer1_skill']; ?></span>
+						<!-- <ul class="post-info">
+							<li><a href="#">Admin</a></li>
+							<li><a href="#">May 31, 2020</a></li>
+							<li><a href="#">12 Comments</a></li>
+						</ul> -->
+						<p><?php echo $row['aboutme_paragraph']; ?>.</p>
+						<!-- <div class="post-options">
+							<div class="row">
+							<div class="col-6">
+								<ul class="post-tags">
+								<li><i class="fa fa-tags"></i></li>
+								<li><a href="#">Beauty</a>,</li>
+								<li><a href="#">Nature</a></li>
 								</ul>
-							</div> -->
-						</div>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="col-md-6 col-sm-4 animate-box">
-						<div>
-
-							<div class="text-center fh5co-heading">
-								<h2>
-									<a href="courses.php">
-										<?php echo $row['about_me']; ?>
-									</a>
-								</h2>
-								<p>
-									<?php echo $row['aboutme_paragraph']; ?>
-								</p>
 							</div>
+							<div class="col-6">
+								<ul class="post-share">
+								<li><i class="fa fa-share-alt"></i></li>
+								<li><a href="#">Facebook</a>,</li>
+								<li><a href="#"> Twitter</a></li>
+								</ul>
+							</div>
+							</div>
+						</div> -->
 						</div>
-					</div>
-				</div>
-			<?php
-					}
-					?>
-	</div>
+                  	</div>
+                  </div>
+                </div>
+				<?php
+							}
+							?>
+              </div>
+            </div>
+          </div>
 
-</div>
+        </div>
+      </div>
+    </section>	
+
 
 <div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/img_bg_3.jpg);">
 	<div class="overlay"></div>
