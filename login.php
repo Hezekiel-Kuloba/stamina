@@ -66,6 +66,10 @@ if(isset($_POST['form1'])) {
                                     <label for=""></label>
                                     <input type="submit" class="btn btn-primary" value="Submit" name="form1">
                                 </div>
+                                <div style=" display: flex; justify-content: space-evenly; ">
+                                    <p style="margin-top: 4px; ">Do not have an account?</p>
+                                    <p style="margin-bottom: 90px; "><a href="registration.php" class="btn btn-primary">Register</a></p>
+                                </div>
                             </div>
                         </div>                        
                     </form>

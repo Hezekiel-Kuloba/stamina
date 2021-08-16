@@ -81,12 +81,12 @@ foreach ($result as $row)
 			
 						<a href="#">
 							<div class="case-studies-summary">
-								<span>
+								<span style="word-wrap: break-word">
 									<?php echo $row['image1_text1']; ?>
 								</span>
-								<h2>
+								<span style="word-wrap: break-word">
 									<?php echo $row['image1_text2']; ?>
-								</h2>
+							</span>
 							</div>
 						</a>
 					</li>

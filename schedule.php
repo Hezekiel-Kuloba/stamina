@@ -372,7 +372,7 @@ foreach ($result as $row)
 
 
 
-<div id="fh5co-schedule" class="fh5co-bg" style="background-image:url(images/backgroundImages/<?php echo $background_image; ?>);">
+<div id="fh5co-schedule" class="fh5co-bg" style="background-image:url(images/scheduleImages/<?php echo $background_image; ?>);">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">

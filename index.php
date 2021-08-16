@@ -426,15 +426,36 @@ foreach ($result as $row)
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
-				<div class="display-t">
+				<!-- <div class="display-t"> -->
 					<div class="display-tc animate-box" data-animate-effect="fadeIn">
 						<h1>
 							<?php echo $backgroundimage_text1; ?>
-						</h1>
-						<p><a href="pricing.php"
-								class="btn btn-primary">Become A Member</a></p>
+						</h1>  
+						
+						<a href="pricing.php"
+							class="btn btn-secondary btn-sm">Become A Member</a>
+						</p>
 					</div>
-				</div>
+
+					<!-- <?php
+							if(isset($_SESSION['customer'])) {
+								?>
+								<div style="color:white; display: flex; margin: 0; justify-content: space-evenly; padding: 0%;">
+									<?php echo $_SESSION['customer']['cust_email']; ?>
+									<a class="btn btn-primary" href="logout.php">Log out</a>
+								</div>
+								
+								<?php
+							} else {
+								?>
+								<div style="display: flex; margin: 0%; justify-content: center; padding: 0%;">
+									<a style="color:gray; height: 24vh " href="registration.php"><.php">register</a>
+									<a style="color:gray; " href="login.php"><button class="btn btn-secondary btn-sm"  href="login.php">login</button></a>
+								</div>
+							<?php	
+							}
+						?>  -->
+				<!-- </div> -->
 			</div>
 		</div>
 	</div>
@@ -491,8 +512,8 @@ foreach ($result as $row)
 		<div class="row animate-box">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 				<h2>
-				<a href="courses.php">Courses</a>
-</h2>
+					<a href="courses.php">Courses</a>
+				</h2>
 				<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius</p>
 			</div>
 		</div>
@@ -516,12 +537,12 @@ foreach ($result as $row)
 					<li class="one-third animate-box" data-animate-effect="fadeIn"
 						style="background-image: url(images/coursesImages/<?php echo $row['image1']; ?>); ">
 			
-						<a href="#">
+						<a style="color: white;" href="#">
 							<div class="case-studies-summary">
 								<span style="word-wrap: break-word">
 									<?php echo $row['image1_text1']; ?>
 								</span>
-								<h2 style="word-wrap: break-word">
+								<h2 style="color: white; word-wrap: break-word">
 									<?php echo $row['image1_text2']; ?>
 								</h2>
 							</div>
@@ -538,83 +559,105 @@ foreach ($result as $row)
 		</div>
 	</div>	
 </div>
-</div>
 
 
-<div id="fh5co-trainer">
-	<div class="container">
+<section class="blog-posts">
+      <div style="overflow: none;" class="container">
+	  <div style="overflow: none;">
 		<div class="row animate-box">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-				<h2>
-					<?php echo $text1; ?>
-				</h2>
-				<p>
-					<?php echo $text2; ?>.
-				</p>
+				<h2>COACHES</h2>
+				<p><?php echo $text2; ?>.</p>
 			</div>
 		</div>
-		<?php
-		$i=0;
-		$statement = $pdo->prepare("SELECT trainer_id, trainer1_image, trainer1_name, trainer1_skill, about_me, aboutme_paragraph FROM trainer ORDER BY trainer_id ASC limit 1 ");
-		$statement->execute();
-		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
-		
-		foreach ($result as $row) {
-			
-			$i++;
-			?>
-				<div class="row">
-					<div class="col-md-6 col-sm-4 animate-box h-50%">
-						<div class="trainer">
-							<a href="#"><img width="400" height="400"
-									src="images/trainerImages/<?php echo $row['trainer1_image']; ?>" alt="trainer"></a>
-							<div class="title" style="margin-bottom: 100px;">
-								<h3><a href="#">
-										<?php echo $row['trainer1_name']; ?>
-									</a></h3>
-								<span>
-									<?php echo $row['trainer1_skill']; ?>
-								</span>
-							</div>
-							<!-- <div class="desc text-center">
-								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								</ul>
-							</div> -->
-						</div>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="col-md-6 col-sm-4 animate-box">
-						<div>
-
-							<div class="text-center fh5co-heading">
-								<h2>
-									<a href="courses.php">
-										<?php echo $row['about_me']; ?>
-									</a>
-								</h2>
-								<p>
-									<?php echo $row['aboutme_paragraph']; ?>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php
-					}
-					?>
-	</div>
 
 </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="all-blog-posts">
+              <div class="row">
+			  <?php
+							$i=0;
+							$statement = $pdo->prepare("SELECT trainer_id, trainer1_image, trainer1_name, trainer1_skill, about_me, aboutme_paragraph FROM trainer ORDER BY trainer_id ASC limit 1 ");
+							$statement->execute();
+							$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+							
+							foreach ($result as $row) {
+								
+								$i++;
+								?>
 
-<div id="fh5co-schedule" class="fh5co-bg" style="background-image:url(images/backgroundImages/<?php echo $schedule_image; ?>);"
+                <div class="col-lg-12">
+                  <div class="blog-post">
+					 	<div class="col-lg-12">
+				  			<div style="color: gray;" class="down-content">
+								<h4 ><?php echo $row['trainer1_name']; ?></h4>
+							</div>
+						</div>
+					  	<div class="col-lg-6">
+							<div class="blog-thumb">
+								<!-- <div class="down-content">
+								<h4 class="col-lg-offset-2" ><?php echo $row['trainer1_name']; ?></h4>
+								</div> -->
+								<div class="hezzy">	
+								<img style="width:90%;" src="images\trainerImages\<?php echo $row['trainer1_image']; ?>" alt="">
+								</div>
+							</div>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					<div class="col-lg-6">
+						<div class="down-content">
+						<span style="text-decoration: underline;" ><?php echo $row['trainer1_skill']; ?></span>
+						<!-- <ul class="post-info">
+							<li><a href="#">Admin</a></li>
+							<li><a href="#">May 31, 2020</a></li>
+							<li><a href="#">12 Comments</a></li>
+						</ul> -->
+						<p><?php echo $row['aboutme_paragraph']; ?>.</p>
+						<!-- <div class="post-options">
+							<div class="row">
+							<div class="col-6">
+								<ul class="post-tags">
+								<li><i class="fa fa-tags"></i></li>
+								<li><a href="#">Beauty</a>,</li>
+								<li><a href="#">Nature</a></li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul class="post-share">
+								<li><i class="fa fa-share-alt"></i></li>
+								<li><a href="#">Facebook</a>,</li>
+								<li><a href="#"> Twitter</a></li>
+								</ul>
+							</div>
+							</div>
+						</div> -->
+						</div>
+                  	</div>
+                  </div>
+                </div>
+				<?php
+							}
+							?>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>	
+<div id="fh5co-schedule" class="fh5co-bg" style="background-image:url(images/scheduleImages/<?php echo $schedule_image; ?>);"
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">

@@ -111,9 +111,13 @@ if (isset($_POST['form1'])) {
                                     <label for="">Confirm Password</label>
                                     <input type="password" class="form-control" name="cust_re_password">
                                 </div>
-                                <div class="col-md-6 mb-5 form-group">
+                                <div style="margin-right: 20px; " class="col-md-6 mb-5 form-group">
                                     <label for=""></label>
                                     <input type="submit" class="btn btn-primary" value="Submit" name="form1">
+                                </div>
+                                <div class="col-md-6 form-group" style=" display: flex; justify-content: space-evenly; margin-right: 20px; ">
+                                    <p style="margin-top: 4px; ">Already have an account?</p>
+                                    <p style="margin-bottom: 90px; "><a href="login.php" class="btn btn-primary">Login</a></p>
                                 </div>
                             </div>
                         </div>                        
